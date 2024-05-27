@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   gap: 10em;
+  flex-wrap: wrap;
 }
 
 .about__banner {
@@ -82,6 +83,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .stats {
@@ -144,4 +146,134 @@
   font-size: 16px;
   line-height: 20px;
   color: #f5f5f5;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .about__inner {
+    gap: 5em;
+  }
+
+  .about__banner {
+    margin-left: 0;
+  }
+
+  .main__img {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__content {
+    width: 80%;
+    margin-bottom: 2em;
+  }
+
+  .about__banner {
+    width: 80%;
+  }
+
+  .main__img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .texts {
+    width: 80%;
+  }
+
+  .texts button {
+    width: 100%;
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__banner {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .main__img {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .absolute__first {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+
+  .learn__more img {
+    width: 100%;
+    position: static;
+  }
+
+  .about__content {
+    width: 100%;
+  }
+
+  .about__content h1 {
+    font-size: 28px;
+  }
+
+  .about__content p, .texts p {
+    font-size: 14px;
+  }
+
+  .stats h1 {
+    font-size: 30px;
+  }
+
+  .stats p {
+    font-size: 12px;
+  }
+
+  .texts {
+    width: 90%;
+    margin: 2em auto 0;
+  }
+}
+
+/* For iPad Pro and larger tablets */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .about__inner {
+    gap: 4em; /* Adjust gap to avoid overlap */
+    flex-wrap: nowrap; /* Avoid wrapping */
+  }
+
+  .about__banner {
+    width: 45%; /* Adjust width to give more space to text */
+    margin-left: 0; /* Remove negative margin */
+  }
+
+  .main__img {
+    margin-left: 2em; /* Adjust margin for better spacing */
+    height: auto; /* Ensure image height adjusts */
+  }
+
+  .about__content {
+    width: 45%; /* Adjust width for balance */
+  }
+
+  .about__content h1 {
+    font-size: 32px; /* Adjust font size for better fit */
+  }
+
+  .about__content p {
+    font-size: 15px; /* Adjust font size for better fit */
+  }
 }

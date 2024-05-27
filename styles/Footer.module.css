@@ -1,3 +1,4 @@
+/* Base Styles */
 .wrapper {
   height: 696px;
   background: url("/images/farm-outline.png") bottom right no-repeat, #017d3f;
@@ -100,4 +101,158 @@
 
 .link a:hover::after {
   width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__logo h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .footer__logo h1 span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer__logo p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .company h1,
+  .services__ctn h1,
+  .contact__ctn h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .link a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__logo h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .footer__logo h1 span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer__logo p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .company h1,
+  .services__ctn h1,
+  .contact__ctn h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .link a {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .icon__ctn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon__ctn .icons {
+    padding: 0.5em;
+  }
+
+  .footer__logo h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .footer__logo h1 span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .footer__logo p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .company h1,
+  .services__ctn h1,
+  .contact__ctn h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .link a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .inner {
+    width: 90%;
+  }
+
+  .footer__logo,
+  .company,
+  .services__ctn,
+  .contact__ctn {
+    margin-bottom: 2em;
+  }
+
+  .footer__logo h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .footer__logo h1 span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .footer__logo p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .company h1,
+  .services__ctn h1,
+  .contact__ctn h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .link a {
+    font-size: 11px;
+    line-height: 15px;
+  }
 }

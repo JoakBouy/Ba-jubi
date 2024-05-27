@@ -152,3 +152,94 @@
   line-height: 44px;
   color: #ffffff;
 }
+
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 767px) {
+  .inner {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  .card__ctn {
+    grid-template-columns: repeat(1, 1fr); /* Stack cards vertically */
+  }
+  /* Adjust other styles as needed for smaller screens */
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inner {
+    width: 90%; /* Adjust width for medium screens */
+  }
+  .card__ctn {
+    grid-template-columns: repeat(2, 1fr); /* Show cards in 2 columns */
+  }
+  /* Adjust other styles as needed for medium screens */
+}
+
+/* For screens 1024px and larger (e.g., desktops) */
+@media (min-width: 1024px) {
+  .inner {
+    width: 80%; /* Reset width for larger screens */
+  }
+  /* Adjust other styles as needed for large screens */
+}
+
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 767px) {
+  .header h4 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .header h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .card h1 {
+    font-size: 60px;
+    margin: -40px -10px 40px 5px;
+  }
+  .card__text h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .card__text p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .absolute h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header h4 {
+    font-size: 14px; /* Adjust font size for tablets */
+    line-height: 18px; /* Adjust line height for tablets */
+  }
+  .header h1 {
+    font-size: 32px; /* Adjust font size for tablets */
+    line-height: 40px; /* Adjust line height for tablets */
+  }
+  .card h1 {
+    font-size: 80px; /* Adjust font size for tablets */
+    margin: -50px -15px 50px 10px; /* Adjust margins for tablets */
+  }
+  .card__text h3 {
+    font-size: 22px; /* Adjust font size for tablets */
+    line-height: 26px; /* Adjust line height for tablets */
+  }
+  .card__text p {
+    font-size: 16px; /* Adjust font size for tablets */
+    line-height: 20px; /* Adjust line height for tablets */
+  }
+  .absolute h1 {
+    font-size: 32px; /* Adjust font size for tablets */
+    line-height: 40px; /* Adjust line height for tablets */
+  }
+}
+
+/* For screens 1024px and larger (e.g., desktops) */
+@media (min-width: 1024px) {
+  /* Reset font sizes, line heights, and margins for larger screens */
+}

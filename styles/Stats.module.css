@@ -36,3 +36,77 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 767px) {
+  .inner {
+    width: 90%; /* Adjust width for smaller screens */
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: space-around; /* Adjust alignment for smaller screens */
+  }
+  .stats {
+    flex-basis: 45%; /* Adjust width of stats items for smaller screens */
+    margin: 1em 0; /* Add margin between stats items */
+  }
+  .stats h1 {
+    font-size: 48px; /* Decrease font size for smaller screens */
+    line-height: 58px; /* Adjust line height for smaller screens */
+  }
+  .stats p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    line-height: 18px; /* Adjust line height for smaller screens */
+    top: unset; /* Remove top positioning */
+    left: unset; /* Remove left positioning */
+    transform: unset; /* Remove transform */
+    text-align: center; /* Center align text */
+  }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inner {
+    width: 85%; /* Adjust width for tablets */
+    flex-wrap: wrap; /* Allow flex items to wrap */
+  }
+  .stats {
+    flex-basis: 45%; /* Adjust width of stats items for tablets */
+    margin: 1em 0; /* Add margin between stats items */
+  }
+  .stats h1 {
+    font-size: 64px; /* Decrease font size for tablets */
+    line-height: 78px; /* Adjust line height for tablets */
+  }
+  .stats p {
+    font-size: 15px; /* Slightly decrease font size for tablets */
+    line-height: 20px; /* Adjust line height for tablets */
+    top: 50%; /* Adjust positioning for tablets */
+    left: 50%; /* Adjust positioning for tablets */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center align text */
+  }
+}
+
+/* For screens 1024px and larger (e.g., desktops) */
+@media (min-width: 1024px) {
+  .inner {
+    width: 80%; /* Adjust width for desktops */
+    flex-wrap: nowrap; /* No wrapping needed for larger screens */
+    justify-content: space-between; /* Space out the stats items */
+  }
+  .stats {
+    flex-basis: 30%; /* Adjust width of stats items for desktops */
+    margin: 0; /* Remove margin between stats items */
+  }
+  .stats h1 {
+    font-size: 100px; /* Maintain large font size for desktops */
+    line-height: 122px; /* Maintain line height for desktops */
+  }
+  .stats p {
+    font-size: 16px; /* Maintain font size for desktops */
+    line-height: 20px; /* Maintain line height for desktops */
+    top: 45%; /* Adjust positioning for desktops */
+    left: 50%; /* Adjust positioning for desktops */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center align text */
+  }
+}

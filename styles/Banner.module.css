@@ -1,3 +1,4 @@
+/* Base Styles */
 .wrapper {
   width: 100%;
   height: 885px;
@@ -98,4 +99,159 @@
 .active {
   color: #fff !important;
   transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .inner {
+    width: 90%;
+  }
+
+  .lhs h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .learn__ctn button {
+    width: 140px;
+    height: 55px;
+    font-size: 14px;
+  }
+
+  .watch__ctn p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .inner {
+    width: 95%;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lhs h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .learn__ctn {
+    margin-top: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learn__ctn button {
+    width: 120px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .watch__ctn {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .watch__ctn p {
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .rhs .numbering {
+    font-size: 14px;
+    margin: 4em auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    height: 600px;
+  }
+
+  .inner {
+    width: 100%;
+  }
+
+  .lhs h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .learn__ctn button {
+    width: 100px;
+    height: 45px;
+    font-size: 10px;
+  }
+
+  .watch__ctn p {
+    font-size: 10px;
+  }
+
+  .rhs .numbering {
+    font-size: 12px;
+    margin: 3em auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    height: 400px;
+  }
+
+  .inner {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .lhs h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .learn__ctn button {
+    width: 80px;
+    height: 40px;
+    font-size: 8px;
+  }
+
+  .watch__ctn p {
+    font-size: 8px;
+  }
+
+  .rhs .numbering {
+    font-size: 10px;
+    margin: 2em auto;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    height: 350px;
+  }
+
+  .lhs h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .learn__ctn button {
+    width: 70px;
+    height: 35px;
+    font-size: 7px;
+  }
+
+  .watch__ctn p {
+    font-size: 7px;
+  }
+
+  .rhs .numbering {
+    font-size: 9px;
+    margin: 1.5em auto;
+    visibility: hidden;
+  }
 }

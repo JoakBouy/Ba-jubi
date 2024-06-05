@@ -60,7 +60,7 @@ const AboutLite = () => {
         >
           <motion.img
             variants={imageAnimate}
-            src="/images/harvester.png"
+            src="/images/harvester.jpg"
             alt="about_banner"
             className={styles.main__img}
           />

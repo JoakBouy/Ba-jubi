@@ -158,7 +158,7 @@ const Mission = () => {
         <motion.div variants={imageAnimate} className={styles.large__img__ctn}>
           <motion.img
             variants={imageAnimate}
-            src="/images/banner-bg.jpg"
+            src="/images/cleaning-bg.jpg"
             className={styles.large__img}
             alt=""
           />

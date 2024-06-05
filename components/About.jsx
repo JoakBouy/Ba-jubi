@@ -80,7 +80,7 @@ const About = () => {
         >
           <motion.img
             variants={bannerVariants}
-            src="/images/about-small.png"
+            src="/images/bajubi.jpg"
             alt="about_banner"
             className={styles.main__img}
           />

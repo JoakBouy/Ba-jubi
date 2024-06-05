@@ -86,17 +86,7 @@ const Banner = () => {
               <button type="button" className={styles.learn__more}>
                 Learn More
               </button>
-              <div className={styles.watch__ctn}>
-                <span>
-                  <Image
-                    src="/svgs/ic-play.svg"
-                    alt="play_img"
-                    width={60}
-                    height={60}
-                  />
-                </span>
-                <p>Watch Video</p>
-              </div>
+              
             </div>
           </div>
           <div className={styles.rhs}>

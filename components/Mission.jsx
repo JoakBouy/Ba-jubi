@@ -162,15 +162,7 @@ const Mission = () => {
             className={styles.large__img}
             alt=""
           />
-          <div className={styles.absolute}>
-            <Image
-              src="/svgs/ic-play-yellow.svg"
-              alt="yellow play icon"
-              height={120}
-              width={120}
-            />
-            <h1>The Future Of Service</h1>
-          </div>
+          
         </motion.div>
       </motion.div>
     </div>

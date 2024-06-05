@@ -7,6 +7,7 @@ import Services from "../components/Services";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Partners from "../components/Gallery";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <InfoCard />
         <About />
         <Services />
+        <Partners />
         <Contact />
         <Footer />
       </main>

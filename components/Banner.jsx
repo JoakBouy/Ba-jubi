@@ -9,7 +9,7 @@ import "react-slideshow-image/dist/styles.css";
 const Banner = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const images = [
-    "/images/banner-bg.jpg",
+    "/images/bajubi8.png",
     "/images/banner-bg2.jpg",
     "/images/banner-bg3.jpg",
   ];

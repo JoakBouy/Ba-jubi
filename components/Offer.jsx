@@ -263,19 +263,10 @@ const Offer = () => {
         >
           <motion.img
             variants={imageAnimate}
-            src="/images/banner-bg2.jpg"
+            src="/images/bajubi7.jpg"
             className={styles.large__img}
             alt=""
           />
-          <div className={styles.absolute}>
-            <Image
-              src="/svgs/ic-play-yellow.svg"
-              alt="yellow play icon"
-              height={120}
-              width={120}
-            />
-            <h1>A Sample of our work</h1>
-          </div>
         </motion.div>
       </motion.div>
     </div>

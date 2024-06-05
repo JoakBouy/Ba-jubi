@@ -17,7 +17,6 @@ export default function Home() {
         <InfoCard />
         <About />
         <Services />
-        <Gallery />
         <Contact />
         <Footer />
       </main>

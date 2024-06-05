@@ -247,10 +247,10 @@ const Offer = () => {
               transition={{ staggerChildren: 0.5 }}
               className={styles.card__text}
             >
-              <motion.h3 variants={textVariants}>Emergency Response Programs (ERP)</motion.h3>
+              <motion.h3 variants={textVariants}>Bin Management Services</motion.h3>
               <motion.p variants={textVariants}>
-                We also do sanitization of premises to prevent the spread of Corona Virus.
-                Chemical treatment of all drainage systems for the prevention and control of cholera.
+                Our Bin Management Services ensure timely waste collection, thorough bin cleaning,
+                and effective sanitization to maintain a clean and hygienic environment.
               </motion.p>
             </motion.div>
           </motion.div>

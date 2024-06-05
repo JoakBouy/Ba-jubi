@@ -11,7 +11,7 @@ const Banner = () => {
   const images = [
     "/images/bajubi8.png",
     "/images/bajubi5.jpg",
-    "/images/banner-bg3.jpg",
+    "/images/banner-bg2.jpg",
   ];
 
   // eslint-disable-next-line react-hooks/exhaustive-deps

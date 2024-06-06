@@ -191,6 +191,19 @@ const Footer = () => {
                 />
               </span>
               <Link href="#">
+                Bin Managenent
+              </Link>
+            </motion.div>
+            <motion.div variants={textVariants} className={styles.link}>
+              <span>
+                <Image
+                  src="/svgs/ic-arrow-white.svg"
+                  alt="arrow_white"
+                  width={11}
+                  height={11}
+                />
+              </span>
+              <Link href="#">
                 General Cleaning
               </Link>
             </motion.div>

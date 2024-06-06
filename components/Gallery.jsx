@@ -40,6 +40,12 @@ const Partners = () => {
     "/images/solidarites.png",
     "/images/trinity.jpg",
     "/images/unhcr.png",
+    "/images/amref.jpg",
+    "/images/npa.jpg",
+    "/images/moh.jpg",
+
+
+
   ];
 
   return (

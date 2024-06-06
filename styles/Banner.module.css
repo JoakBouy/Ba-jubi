@@ -7,12 +7,12 @@
 
 .bg__img {
   width: 100%;
-  height: 100%;
+  height: 88%;
 }
 
 .bg__img img {
   width: 100%;
-  height: 100%;
+  height: 88%;
   object-fit: cover;
 }
 
@@ -104,7 +104,7 @@
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .inner {
-    width: 90%;
+    width: 80%;
   }
 
   .lhs h1 {

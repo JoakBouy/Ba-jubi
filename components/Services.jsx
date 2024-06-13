@@ -118,10 +118,10 @@ const Services = () => {
               transition={{ staggerChildren: 0.5 }}
               className={styles.card__text}
             >
-              <motion.h3 variants={textVariants}>General & Deep Cleaning Services</motion.h3>
+              <motion.h3 variants={textVariants}>General Cleaning Services</motion.h3>
               <motion.p variants={textVariants}>
-                We pride ourselves as the only providers in South Sudan
-                who offer Deep Cleaning Services
+                This is the standard cleaning offered in
+                Institutions.
               </motion.p>
             </motion.div>
             <div className={styles.card__img}>
@@ -142,10 +142,10 @@ const Services = () => {
               transition={{ staggerChildren: 0.5 }}
               className={styles.card__text}
             >
-              <motion.h3 variants={textVariants}>Bin Management Services</motion.h3>
+              <motion.h3 variants={textVariants}>Detailed Cleaning Services</motion.h3>
               <motion.p variants={textVariants}>
-                Our Bin Management Services ensure timely waste collection, thorough bin cleaning,
-                and effective sanitization to maintain a clean and hygienic environment.
+                We pride ourselves as the only providers in South Sudan.
+                its the art of cleaning an institutions premises.
               </motion.p>
             </motion.div>
             <div className={styles.card__img}>

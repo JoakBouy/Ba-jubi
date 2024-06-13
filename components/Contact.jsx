@@ -58,7 +58,8 @@ const Contact = () => {
             />
           </div>
           <motion.h1 variants={textVariants}>
-            We Want To Hear From You
+            We are Located in 3 Countries. <br></br>
+
           </motion.h1>
         </motion.header>
         <section className={styles.contact__ctn}>
@@ -68,7 +69,14 @@ const Contact = () => {
             transition={{ staggerChildren: 0.5 }}
             className={styles.lhs}
           >
-            <motion.h1 variants={textVariants}>Get In Touch With Us</motion.h1>
+            <motion.h1 variants={textVariants}>
+            South Sudan Address:<br></br> Munuki Block B <br></br> behind Munuki Block Council Office
+
+            <br></br>
+
+          
+
+</motion.h1>
             <motion.div variants={textVariants} className={styles.icon__ctn}>
               {/* <div className={styles.icons}>
                   <Image

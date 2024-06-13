@@ -247,10 +247,10 @@ const Offer = () => {
               transition={{ staggerChildren: 0.5 }}
               className={styles.card__text}
             >
-              <motion.h3 variants={textVariants}>Emergency Response Programs (ERP)</motion.h3>
+              <motion.h3 variants={textVariants}>Bin Management Services</motion.h3>
               <motion.p variants={textVariants}>
-                We also do sanitization of premises to prevent the spread of Corona Virus.
-                Chemical treatment of all drainage systems for the prevention and control of cholera.
+                Our Bin Management Services ensure timely waste collection, thorough bin cleaning,
+                and effective sanitization to maintain a clean and hygienic environment.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -263,19 +263,10 @@ const Offer = () => {
         >
           <motion.img
             variants={imageAnimate}
-            src="/images/banner-bg2.jpg"
+            src="/images/bajubi7.jpg"
             className={styles.large__img}
             alt=""
           />
-          <div className={styles.absolute}>
-            <Image
-              src="/svgs/ic-play-yellow.svg"
-              alt="yellow play icon"
-              height={120}
-              width={120}
-            />
-            <h1>A Sample of our work</h1>
-          </div>
         </motion.div>
       </motion.div>
     </div>

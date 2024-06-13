@@ -71,17 +71,7 @@ const GalleryBanner = () => {
               >
                 Learn More
               </motion.button>
-              <motion.div variants={textVariants} className={styles.watch__ctn}>
-                <span>
-                  <Image
-                    src="/svgs/ic-play.svg"
-                    alt="play_img"
-                    width={60}
-                    height={60}
-                  />
-                </span>
-                <p>Watch Video</p>
-              </motion.div>
+             
             </motion.div>
           </div>
         </main>

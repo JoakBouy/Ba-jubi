@@ -60,7 +60,7 @@ const AboutLite = () => {
         >
           <motion.img
             variants={imageAnimate}
-            src="/images/harvester.png"
+            src="/images/bajubi2.jpg"
             alt="about_banner"
             className={styles.main__img}
           />
@@ -72,7 +72,7 @@ const AboutLite = () => {
           >
             <motion.img
               variants={imageAnimate}
-              src="/images/tractor-ploughing.png"
+              src=""
               alt=""
               className={styles.absolute__first}
             />
@@ -142,7 +142,7 @@ const AboutLite = () => {
                 height={128}
                 alt="time"
               />
-              <motion.h1 variants={textVariants}>2+</motion.h1>
+              <motion.h1 variants={textVariants}>11+</motion.h1>
               <motion.p variants={textVariants}>Years of Service</motion.p>
             </motion.div>
             <motion.div

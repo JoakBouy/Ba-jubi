@@ -83,7 +83,7 @@ const InfoCard = () => {
           className={styles.card__one}
         >
           <img
-            src="/images/info-img.png"
+            src="/images/bajubi6.jpg"
             alt="image"
             className={styles.card__one__image}
           />
@@ -119,7 +119,7 @@ const InfoCard = () => {
            
             />
 
-            <motion.h1 variants={textVariants}>2+</motion.h1>
+            <motion.h1 variants={textVariants}>11+</motion.h1>
             <motion.p variants={textVariants}>
               Years of Excellence <br /> in the Industry.
             </motion.p>

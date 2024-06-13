@@ -9,9 +9,9 @@ import "react-slideshow-image/dist/styles.css";
 const Banner = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const images = [
-    "/images/banner-bg.jpg",
+    "/images/bajubi8.png",
+    "/images/bajubi5.jpg",
     "/images/banner-bg2.jpg",
-    "/images/banner-bg3.jpg",
   ];
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -86,17 +86,7 @@ const Banner = () => {
               <button type="button" className={styles.learn__more}>
                 Learn More
               </button>
-              <div className={styles.watch__ctn}>
-                <span>
-                  <Image
-                    src="/svgs/ic-play.svg"
-                    alt="play_img"
-                    width={60}
-                    height={60}
-                  />
-                </span>
-                <p>Watch Video</p>
-              </div>
+              
             </div>
           </div>
           <div className={styles.rhs}>

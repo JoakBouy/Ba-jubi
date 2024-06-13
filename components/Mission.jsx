@@ -158,11 +158,19 @@ const Mission = () => {
         <motion.div variants={imageAnimate} className={styles.large__img__ctn}>
           <motion.img
             variants={imageAnimate}
-            src="/images/bajubi3.jpg"
+            src="/images/banner-bg.jpg"
             className={styles.large__img}
             alt=""
           />
-          
+          <div className={styles.absolute}>
+            <Image
+              src="/svgs/ic-play-yellow.svg"
+              alt="yellow play icon"
+              height={120}
+              width={120}
+            />
+            <h1>The Future Of Service</h1>
+          </div>
         </motion.div>
       </motion.div>
     </div>

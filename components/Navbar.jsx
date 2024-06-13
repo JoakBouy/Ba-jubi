@@ -112,7 +112,15 @@ const Navbar = () => {
                   Services
                 </Link>
               </li>
-              
+              <li
+                className={`${styles.links} ${
+                  pathname === "/gallery" && styles.route
+                }`}
+              >
+                <Link href="/gallery">
+                  Gallery
+                </Link>
+              </li>
               <li
                 className={`${styles.links} ${
                   pathname === "/contact" && styles.route

@@ -80,7 +80,7 @@ const About = () => {
         >
           <motion.img
             variants={bannerVariants}
-            src="/images/bajubi.jpg"
+            src="/images/about-banner.jpg"
             alt="about_banner"
             className={styles.main__img}
           />
@@ -161,7 +161,7 @@ const About = () => {
                 height={128}
                 alt="time"
               />
-              <motion.h1 variants={textVariants}>11+</motion.h1>
+              <motion.h1 variants={textVariants}>2+</motion.h1>
               <motion.p variants={textVariants}>Years of Service</motion.p>
             </motion.div>
             <motion.div
@@ -182,7 +182,27 @@ const About = () => {
             </motion.div>
           </motion.div>
 
-          
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            transition={{ staggerChildren: 0.5 }}
+            className={styles.learn__more}
+          >
+            <motion.img
+              variants={imageAnimate}
+              src="/images/about-small.png"
+              alt="about_banner"
+              className={styles.small__img}
+            />
+            <motion.div className={styles.texts}>
+              <motion.p variants={textVariants}>
+                You can learn more about our mission statement and our goals here.
+              </motion.p>
+              <motion.button variants={textVariants} type="button">
+                Learn More
+              </motion.button>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </motion.div>
     </div>

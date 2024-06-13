@@ -2,9 +2,9 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/Partners.module.css";
+import styles from "../styles/Gallery.module.css";
 
-const Partners = () => {
+const Gallery = () => {
   const textVariants = {
     offscreen: {
       opacity: 0,
@@ -28,25 +28,28 @@ const Partners = () => {
     },
   };
 
-  const partnerLogos = [
-    "/images/crs.jpg",
-    "/images/unfpa.jpg",
-    "/images/usaid.png",
-    "/images/drc.png",
-    "/images/irc.png",
-    "/images/mercycorps.png",
-    "/images/NRC-logo.png",
-    "/images/savethechildren.png",
-    "/images/solidarites.png",
-    "/images/trinity.jpg",
-    "/images/unhcr.png",
-    "/images/amref.jpg",
-    "/images/npa.jpg",
-    "/images/moh.jpg",
-
-
-
-  ];
+  const imageAnimate = {
+    offscreen: {
+      opacity: 0,
+      scale: 0,
+      transition: {
+        type: "bounce",
+        bounce: 0.4,
+        ease: "easeIn",
+        duration: 1,
+      },
+    },
+    onscreen: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "bounce",
+        bounce: 0.4,
+        ease: "easeOut",
+        duration: 1,
+      },
+    },
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -57,7 +60,7 @@ const Partners = () => {
           transition={{ staggerChildren: 0.5 }}
           className={styles.header}
         >
-          <motion.h4 variants={textVariants}>Partners</motion.h4>
+          <motion.h4 variants={textVariants}>Gallery</motion.h4>
           <div className={styles.lemon__ctn}>
             {[...Array(3)].map((_, i) => (
               <Image
@@ -69,24 +72,50 @@ const Partners = () => {
               />
             ))}
           </div>
-          <motion.h1 variants={textVariants}>Our Valued Partners</motion.h1>
+          <motion.h1 variants={textVariants}>View Our Work</motion.h1>
         </motion.header>
 
-        <div className={styles.partners__ctn}>
-          {partnerLogos.map((logo, index) => (
+        <div className={styles.grid__ctn}>
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            transition={{ staggerChildren: 0.5 }}
+            className={styles.img__top}
+          >
             <motion.img
-              key={index}
-              src={logo}
-              alt={`Partner ${index + 1}`}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              variants={imageAnimate}
+              src="/images/banner-bg3.jpg"
+              alt="Tractor"
             />
-          ))}
+            <motion.img
+              variants={imageAnimate}
+              src="/images/banner-bg2.jpg"
+              className={styles.right}
+              alt="Germination"
+            />
+          </motion.div>
+          <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            transition={{ staggerChildren: 0.5 }}
+            className={styles.img__bottom}
+          >
+            <motion.img
+              variants={imageAnimate}
+              src="/images/roadside.jpg"
+              className={styles.right}
+              alt="Little Flower"
+            />
+            <motion.img
+              variants={imageAnimate}
+              src="/images/view-more.png"
+              alt="View More"
+            />
+          </motion.div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Partners;
+export default Gallery;
